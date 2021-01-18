@@ -1,3 +1,9 @@
+help:
+	echo "Hello World"
+venvc:
+	py -m venv .venv
+venvl:
+	source .venv/Scripts/activate
 deps:
 	pip install -r requirements.txt; \
 	pip install -r test_requirements.txt	
