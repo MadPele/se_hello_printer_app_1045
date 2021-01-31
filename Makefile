@@ -1,9 +1,5 @@
 help:
 	echo "Hello World"
-venvc:
-	py -m venv .venv
-venvl:
-	source .venv/Scripts/activate
 deps:
 	pip install -r requirements.txt; \
 	pip install -r test_requirements.txt	
@@ -11,6 +7,6 @@ lint:
 	flake8 hello_world test
 .PHONY: test
 test:
-	PYTHONPATH=. py.test --verbose -s
+    PYTHONPATH=. py.test --verbose -s
 run:
 	python main.py
